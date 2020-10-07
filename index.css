@@ -1,0 +1,305 @@
+html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body { 
+    margin:0;
+    padding:0;
+      perspective: 1px;
+      transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+     font-size: 250%
+  }
+  .logo{
+    margin-top: -160px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    text-align: left;
+    display: flex;
+  }
+  .logopicture {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+  .logo h3{
+    color: black;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+  .logo ul {
+    position: absolute;
+    left: 80%;
+    top: 20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  
+  .logo ul li  {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 0px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+    list-style: none;
+  
+  }
+  .logo ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .logo .logo ul li:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #254E58;;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  .logo ul li:hover {
+    color: #8D021F;
+  }
+  .logo ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  .logo ul li:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  .design{
+  margin-left: -220px;
+  }
+  
+  .build{
+    margin-left: 1170px;
+  }
+  
+  .beginner-practice{
+    margin-left: -220px;
+    margin-top: 150px;
+    display: flex;
+  }
+  .beginner-practice p{
+    color: #8D021F;
+    font-size: 24px;
+    margin-left: 350px;
+    text-align: justify;
+    max-width: 450px;
+  }
+  .beginner-practice img{
+    width: 300px;
+    height: 250px;
+    margin-left: 80px;
+    margin-top: -100px;
+  }
+  .left-text{
+    transform: rotate(-90deg);
+    text-align: left;
+    font-size: 60px;
+    position: absolute;
+    color: #8D021F;
+  }
+  
+  .internship{
+    margin-left: 1270px;
+    margin-top: -50px;
+    display: flex;
+  }
+  .internship p{
+    color: #8D021F;
+    font-size: 24px;
+    text-align: justify;
+    max-width: 450px;
+    margin-left: -420px;
+    margin-top: 320px;
+  }
+  
+  .internship img{
+    width: 300px;
+    height: 250px;
+    margin-right: 140px;
+    margin-left: -820px;
+    margin-top: 300px;
+  }
+  
+   .right-text{
+    transform: rotate(90deg);
+    text-align: right;
+    font-size: 60px;
+    position: absolute;
+    color: #8D021F;
+    margin-top: 370px;
+    white-space: nowrap; 
+  }
+  
+  .others{
+    margin-left: -220px;
+    margin-top: 300px;
+    display: flex;
+  }
+  .others p{
+    color: #8D021F;
+    font-size: 24px;
+    margin-left: 350px;
+    text-align: justify;
+    max-width: 450px;
+  }
+  .others img{
+    width: 300px;
+    height: 250px;
+    margin-left: 80px;
+    margin-top: -100px;
+  }
+  
+  
+  
+  /* p {
+    font-size: 140%;
+    line-height: 150%;
+    color: #333;
+  } */
+  
+  .slide {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 175%;
+    color: #fff;
+    /* text-shadow: 0 2px 2px #000; */
+  }
+  .header-box {
+    height: 500px;
+    width: 1000px;
+    background-color: #DBDADA;
+    margin: auto;
+  }
+  .header .mypicture{
+    height: 300px;
+    width: 250px;
+    margin-top: 100px;
+    margin-right: 600px;
+  }
+  .header-box .header-text{
+    margin-top: -320px;
+    margin-left: 500px;
+    max-width: 500px;
+  
+  }
+  .header-text {
+    color: black;
+    font-size: 60px ;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+  
+  .header-box p{
+    color: #8D021F;
+    font-size: 24px;
+    margin-left: 400px;
+    margin-top: -30px;
+    margin-bottom: 80px;
+  }
+  .btn {
+    margin-left: 450px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 30px;
+    background: #CECACA;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+    color: black;
+  
+  }
+  .btn:after, .btn:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+  .btn:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid #8D021F;
+    border-left: 5px solid #8D021F;
+  }
+  .btn:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #8D021F;
+    border-right: 5px solid #8D021F;
+  }
+  .btn:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .btn:hover:before, .btn:hover:after {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #title {
+    background-color: #CECACA;
+    z-index:2;
+  }
+  
+  .works-timeline .header-text{
+    max-width: 550px;
+    margin: 50px auto;
+  
+  }
